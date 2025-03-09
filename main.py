@@ -123,7 +123,7 @@ if st.button("Log My Mood"):
 # Mood Trends Section
 data = load_mood_data()
 if not data.empty:
-    st.markdown('<h2 class="sub-title">Mood Timeline 📆</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="sub-title">Mood Timeline 📅</h2>', unsafe_allow_html=True)
     data["Date"] = pd.to_datetime(data["Date"])
     mood_counts = data["Mood"].value_counts()
     

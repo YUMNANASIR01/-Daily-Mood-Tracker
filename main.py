@@ -132,12 +132,14 @@ if not data.empty:
     st.bar_chart(mood_counts, use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Footer
-st.markdown("""
-<div style="text-align: center; margin-top: 2rem; color: white; opacity: 0.8;">
-    Made with ❤️ by Yumna Nasir 
-</div>
-""", unsafe_allow_html=True)
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <p>Build with 💗 by <a href="https://github.com/YUMNANASIR01/-Daily-Mood-Tracker.git" target="_blank">Yumna Nasir</a></p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
 
